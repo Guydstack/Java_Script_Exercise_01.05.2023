@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java Script Exercise</title>
+</head>
+<body>
+<!-- Info Box -->
+    <div class="info-box">
+        <h1>Java Script Exercise</h1>
+        <p id="my_day"></p>
+        <p id="my_date"></p>
+        <p>Month Notice:</p>
+        <p id="my_date_ms"></p>
+    </div>
+<!-- Holiday Buttons -->
+    <div class="holiday-but">
+        <button type="button" class="wide-but" onclick="document.getElementById('purim').innerHTML = purim">Purim</button>
+        <p id="purim"></p>
+        <button type="button" class="wide-but" onclick="document.getElementById('passover').innerHTML = passover">Passover</button>
+        <p id="passover"></p>
+        <button type="button" class="wide-but" onclick="document.getElementById('shavoout').innerHTML = shavoout">Shavoout</button>
+        <p id="shavoout"></p>
+        <button type="button" class="wide-but" onclick="document.getElementById('suckot').innerHTML = suckot">Suckot</button>
+        <p id="suckot"></p>
+    </div>
+<!-- Login Form -->
+    <form action="" class="my-form">
+        <label for="User Name">User Name:</label>
+        <input type="text" name="User Name" placeholder="User Name" id="user_name" required>
+        <label for="Password">Password:</label>
+        <input type="password" placeholder="Password" name="Password" id="pass_word" minlength="6" required>
+        <button type="submit" id="user_submit">Submit</button>
+    </form>
+<!-- Java Script -->
+    <script src="index.js"></script> 
+</body>
+</html>
