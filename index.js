@@ -110,16 +110,19 @@ let correctPassword = "password123" ;
 let form = document . querySelector ( "form" ); 
 // Intercept form submission 
 form. addEventListener ( "submit" , function ( event ) { 
+  event.preventDefault();
     // Select username and password inputs 
     let usernameInput = document . getElementById ( "user_name" ); 
     let passwordInput = document . getElementById ( "pass_word" ); 
     // Check if the inputs are correct 
     if (usernameInput. value === correctUsername && passwordInput. value === correctPassword) { 
         // If username and password are correct, a confirmation message is displayed 
-        alert ( "Login successful!" ); 
+        // alert ( "Login successful!" ); 
+        document.getElementById("login_ms").innerHTML = "Login successful!";
     } else { 
     // if the username or password are incorrect, an error message is displayed 
-    alert ( "Username or password is incorrect!" ); 
+    // alert ( "Username or password is incorrect!" ); 
+    document.getElementById("login_ms").innerHTML = "Username or password is incorrect!";
   }
 });
 
